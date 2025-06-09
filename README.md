@@ -15,7 +15,7 @@
 
 [Win11安装WSL2 部署Ubuntu 迁移至非系统盘D盘](https://www.bilibili.com/video/BV1Yk7JzTEjH/?spm_id_from=333.337.search-card.all.click&vd_source=b406ed5db011e57f04f8df4e7af4a1f3)
 
-WSL2 常用指令清单
+WSL2 常用指令清单, 更多指令请前往微软[wsl官网](https://learn.microsoft.com/zh-cn/windows/wsl/)
 
 ```bash
 # 查看 WSL 版本（需新版 Windows 才支持）
