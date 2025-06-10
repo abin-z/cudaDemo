@@ -4,14 +4,13 @@
 
 开发环境工具链（WSL2 + CUDA）说明:  
 
-| 项目                                 | 推荐配置                                                   |
-| ------------------------------------ | ---------------------------------------------------------- |
-| **显卡**                             | NVIDIA GeForce RTX5070                                     |
-| **WSL 版本**                         | **WSL 2**（必需，WSL 1 不支持 GPU 加速）                   |
-| **Linux 发行版**                     | Ubuntu 24.04 或 Ubuntu 22.04                               |
-| **NVIDIA GPU 驱动**                  | 安装 [WSL 专用驱动](https://developer.nvidia.com/cuda/wsl) |
-| **CUDA Toolkit**                     | CUDA Toolkit 12.x（适配驱动）                              |
-| **NVIDIA Container Toolkit（可选）** | 用于 GPU 加速 Docker 容器（适合进阶）                      |
+| 项目                | 推荐配置                                                   |
+| ------------------- | ---------------------------------------------------------- |
+| **显卡**            | NVIDIA GeForce RTX5070                                     |
+| **WSL 版本**        | **WSL 2**（必需，WSL 1 不支持 GPU 加速）                   |
+| **Linux 发行版**    | Ubuntu 24.04 或 Ubuntu 22.04                               |
+| **NVIDIA GPU 驱动** | 安装 [WSL 专用驱动](https://developer.nvidia.com/cuda/wsl) |
+| **CUDA Toolkit**    | CUDA Toolkit 12.9（适配驱动）                              |
 
 [Win11安装WSL2 部署Ubuntu 迁移至非系统盘D盘](https://www.bilibili.com/video/BV1Yk7JzTEjH/?spm_id_from=333.337.search-card.all.click&vd_source=b406ed5db011e57f04f8df4e7af4a1f3)
 
