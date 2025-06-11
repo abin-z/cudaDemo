@@ -1,5 +1,5 @@
 # 设置目标名称为 hello
-set(tgt_name hello)
+set(tgt_name hello_cuda)
 
 # 递归查找头文件，存储在变量 headers 中
 # CONFIGURE_DEPENDS 用于确保当文件系统中匹配的文件发生变化时，会触发重新配置
