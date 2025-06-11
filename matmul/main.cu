@@ -4,7 +4,7 @@
 #include <cuda_runtime.h>
 
 // 矩阵大小
-const int N = 1024;  // 矩阵为 N x N
+const int N = 1024;  // 矩阵为 N x N 大约需要 10 亿次乘法 + 10 亿次加法
 
 // CUDA 核函数：矩阵乘法 C = A * B
 __global__ void matmul_kernel(const float* A, const float* B, float* C, int width) {
