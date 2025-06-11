@@ -41,4 +41,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/build_output/bin)
 # add_subdirectory(external/fmt)  # 添加 fmt 库
 add_subdirectory(1_hello)       # 示例 1：Hello World 模块
 add_subdirectory(1_hello_cuda)  # 示例 2：Hello CUDA 模块（包含 .cu 文件，自动由 nvcc 编译）
-add_subdirectory(matrix_add)    # 示例 3：矩阵加法模块（包含 .cu 文件，自动由 nvcc 编译）
+add_subdirectory(matrix_add)    # 示例 3：矩阵加法模块
+add_subdirectory(matmul)        # 示例 4：矩阵乘法模块
