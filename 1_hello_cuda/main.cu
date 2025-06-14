@@ -9,7 +9,7 @@ __global__ void hello_cuda()
 
 int main()
 {
-  hello_cuda<<<2, 2>>>();
+  hello_cuda<<<1, 2>>>();
   cudaDeviceSynchronize();
   std::cout << "Hello from CPU!" << std::endl;
   return 0;
