@@ -3,8 +3,8 @@
 // CUDA 核函数，运行在 GPU 上，可以从 CPU 调用
 __global__ void thread_model(int x)
 {
-  const int gx = gridDim.x;
-  const int bx = blockDim.x;
+  const int gx = gridDim.x; // 网格大小
+  const int bx = blockDim.x; // 块大小
 
   const int bid = blockIdx.x; // 块索引
   const int tid = threadIdx.x; // 线程索引
