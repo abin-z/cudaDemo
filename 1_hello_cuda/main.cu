@@ -12,7 +12,7 @@ __global__ void hello_cuda()
 int main(int argc, char** argv)
 {
   hello_cuda<<<1, 2>>>();
-  cudaDeviceSynchronize();
+  cudaDeviceSynchronize(); // 同步函数, 等待 GPU 完成
   std::cout << "Hello from CPU!" << std::endl;
   return 0;
 }
