@@ -60,3 +60,29 @@ wsl -d Ubuntu-24.04
 wsl -d Ubuntu-24.04 -- lsb_release -a
 ```
 
+### 核函数(Kernel function)
+
+1. 核函数在GPU上进行并行执行
+
+2. 限定词为 `__global__` 修饰
+
+3. 返回值必须是void
+
+4. 形式:
+
+   ```c++
+   // 使用 __global__ 关键字声明
+   // CUDA 核函数, 运行在 GPU 上, 可以从 CPU 调用
+   // 需要使用 <<<...>>> 语法来指定执行配置
+   __global__ void kernel_function(argument arg)
+   {
+     printf("Hello from GPU!\n");  // 不能使用 std::cout, 因为它在 GPU 上运行
+   }
+   
+   void __global__ kernel_function(argument arg)
+   {
+     printf("Hello from GPU!\n");  // 不能使用 std::cout, 因为它在 GPU 上运行
+   }
+   ```
+
+   
